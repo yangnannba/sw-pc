@@ -724,3 +724,36 @@ body {
 	background: #585857 url(../images/banner-productql-bg.jpg) center;
 	height:560px;
 }
+
+
+.smty-wrap{
+   height:372px;
+   background:url(../images/smty-bg.jpg);
+}
+.smty{
+text-align:center;
+  h3{
+    font-size:48px;
+	font-weight: lighter;     
+	text-transform:uppercase ;  
+	font-family: "宋体";	
+	color:$color;
+	letter-spacing:5px;
+  }
+  p{
+    font-size:28px;
+	color:#fff;
+  
+  }
+  ul{
+    @extend %font-size-no;
+	li{
+	  display:inline-block;
+	  color:#fff;
+	  border:2px solid $color;
+	  font-size:18px;
+	  padding:10px;
+	  @include radius(20px);
+	}
+  }
+}

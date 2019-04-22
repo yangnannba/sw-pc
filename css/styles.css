@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .dt-xp:after { content: ""; height: 0; display: block; clear: both; visibility: hidden; }
 
-.ewf, .dongtai-ul, .dongtai-toutiao { font-size: 0; -webkit-text-size-adjust: none; }
+.ewf, .dongtai-ul, .dongtai-toutiao, .smty ul { font-size: 0; -webkit-text-size-adjust: none; }
 
 /* 设置HTML5元素为块 */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -191,5 +191,12 @@ body { font-family: 'Heiti SC', 'Microsoft YaHei', "Helvetica Neue", Helvetica, 
 
 /*产品分类系列----全龄系列*/
 .banner-productql { background: #585857 url(../images/banner-productql-bg.jpg) center; height: 560px; }
+
+.smty-wrap { height: 372px; background: url(../images/smty-bg.jpg); }
+
+.smty { text-align: center; }
+.smty h3 { font-size: 48px; font-weight: lighter; text-transform: uppercase; font-family: "宋体"; color: #d5b08f; letter-spacing: 5px; }
+.smty p { font-size: 28px; color: #fff; }
+.smty ul li { display: inline-block; color: #fff; border: 2px solid #d5b08f; font-size: 18px; padding: 10px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
