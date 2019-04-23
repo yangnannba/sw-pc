@@ -11,10 +11,11 @@
 	<!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->	
-	
+	<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>	
 </head>
 
-<body class="hui-bg">
+<body>
 	<div class="nav">
 		<div class="nav-langeage">CN</div>
 		<ul>
@@ -39,24 +40,72 @@
 	</div>
 
 
-	<div class="container mb-80 ">
+	<div class="container">
 		<ul class="dongtai-ul">
 			<li><a href="#">成人系列</a></li>
 			<li><a href="#">儿童系列</a></li>
 			<li><a href="#">床垫系列</a></li>
 			<li><a href="#">全龄系列</a></li>
 			<li><a href="#">其他系列</a></li>			
-		</ul>
-		
-
-		<div class="xp-h">
-			<p>suvarn<br />latex</p>
-			<h2>床垫系列</h2>
-			<p>mattress</p>
-		</div>
-
-		
+		</ul>	
 	</div>
+	<div class="container">
+		<p class="breadcrumb"><a href="#">产品</a>  >  <a href="#">全龄系列</a>  >  <a href="#">SM乳胶薄垫</a><p>
+		<div class="detail clearfix">
+			<div class="detail-left">
+				<div class="banner_tab clearfix">
+					<ul>
+					  <li id="tab_tophome_1" class="on"><a  onmousemove="startIndex=1;setRab('tophome',4,1,'out','on');"  title=""><img src="images/hxys_1.jpg"  class="tab_img" alt=""/></a></li>
+					  <li id="tab_tophome_2" class="out"><a  onMouseMove="startIndex=2;setRab('tophome',4,2,'out','on');"  title=""><img src="images/hxys_2.jpg"  class="tab_img" alt=""/></a></li>
+					  <li id="tab_tophome_3" class="out"><a  onMouseMove="startIndex=3;setRab('tophome',4,3,'out','on');"  title=""><img src="images/hxys_3.jpg"  class="tab_img" alt=""/></a></li>
+					  <li id="tab_tophome_4" class="out"><a  onmousemove="startIndex=4;setRab('tophome',4,4,'out','on');"  title=""><img src="images/hxys_4.jpg"  class="tab_img" alt=""/></a></li>
+					</ul>  
+				</div>
+				<div class="dklw">
+					<div id="con_tophome_1"><a   title=""><img src="images/hxys_1.jpg" alt=""/></a></div>    
+					<div id="con_tophome_2"  class="hidecontent"><a   title=""><img src="images/hxys_2.jpg" alt="" /></a></div>   
+					<div id="con_tophome_3"  class="hidecontent"><a   title=""><img src="images/hxys_3.jpg" alt="" /></a></div>   
+					<div id="con_tophome_4"  class="hidecontent"><a   title=""><img src="images/hxys_4.jpg" alt=""/></a></div>   
+				  <div class="clear"></div>
+				</div>	
+				<script>
+					function setRab(/*string*/name,/*int*/ itemCnt,/*int*/ curItem, /**/classHide, /**/classShow)
+				{ for(i=1;i<=itemCnt;i++)
+					{ eval("document.getElementById('tab_" + name + "_" + i + "').className='" + classHide + "'");} 
+					eval("document.getElementById('tab_" + name + "_" + curItem + "').className='" + classShow + "'");for(i=1;i<=itemCnt;i++)
+				 { eval("ele_hide = document.getElementById('con_" + name + "_" + i +"')");if(ele_hide) ele_hide.style.display = "none";}
+				 eval("ele_play = document.getElementById('con_" + name + "_" + curItem + "')");if(ele_play) ele_play.style.display = "block";}
+				</script>								
+			</div>
+			<div class="detail-right">
+				<h2>SM 乳胶薄垫</h2>
+				<h3>防螨抑菌 睡眠舒适</h3>
+				<p class="price">￥988</p>
+				<ul>
+					<li>原料：泰国天然乳胶</li>
+					<li>透气性：高</li>
+					<li>垫套：“S、W”专属印花，优质透气面料(整体绗缝工艺，可水洗)</li>
+					<li>尺寸：1.8M*2M 1.5M*2M</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-sm.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>抗皱面料 无痕舒展</p>
+				<p>翻身不黏身 整体绗缝</p>								
+			</div>
+		</div>
+	</div>
+	
 	<div class="smty-wrap">
 		<div class="container smty">
 			<h3>suvarn latexp<br />roduct superiority </h3>
@@ -69,6 +118,55 @@
 			   
 			</ul>
 		</div>	
+	</div>
+	
+	<div class="container zzlc">
+		<img src="images/zzlc.png" alt="" />
+	</div>
+	
+	<div class="container mb-80">
+		<div id="slide-banner" class="slideBox">
+			<div class="bd">
+				<ul>
+					<li><a href="javascript:void(0)" target="_blank"><img src="images/banner-details-1.jpg" /></a></li>
+					<li><a href="javascript:void(0)" target="_blank"><img src="images/banner-details-2.jpg" /></a></li>
+					<li><a href="javascript:void(0)" target="_blank"><img src="images/banner-details-3.jpg" /></a></li>
+				</ul>
+			</div>
+
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+
+		</div>
+
+		<script type="text/javascript">
+		jQuery("#slide-banner").slide({mainCell:".bd ul",autoPlay:true});
+		</script>		
+	</div>
+	
+	<div class="longtime-note">
+		<div class="container ab">
+			<div class="longtime">
+				<h3>long time</h3>
+				<h4>简单维护  给你长久陪伴</h4>
+				<dl>
+					<dt>简单的维护</dt>
+					<dd>乳胶本身具有防尘螨，并抑制细菌的作用，所以维护很简单。乳胶产品不需要经常清洗。但是在清洗时，不能直接浸泡在水里。应该用肥皂水清洗乳胶枕头有污渍的地方，然后放置阴凉处晾干。切勿暴晒，切勿在枕头未晾干时套上枕套。</dd>
+				</dl>
+				<dl>
+					<dt>长久陪伴</dt>
+					<dd>因为天然乳胶泡沫可以承受一定程度的挤压，又迅速恢复到原来的形状，所以具有极高的弹性。天然乳胶泡沫能够长时间使用，不像一些聚氨酯泡沫，很容易水解，而且毫无弹性可言，相比之下天然乳胶从弹性和耐用性来说，具有相对优势。</dd>
+				</dl>
+			</div>
+			<div class="note">
+				<h3>note</h3>
+				<ul>
+					<li><span>1</span><strong>避免让枕头和床垫接触高温和阳光直射。</strong></li>
+					<li><span>2</span><strong>避免让枕头和床垫被水或其他液体弄湿。</strong></li>
+					<li><span>3</span><strong>利用保护套保持产品的干净和整洁。</strong></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
 	<div class="footer">
@@ -93,3 +191,183 @@
 	</div>
 </body>
 </html>
+
+<!--产品详情SP1-->
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-sp1.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>德国100%纯棉枕套</p>
+				<p>泰国100%天然乳胶枕芯</p>								
+			</div>
+		</div>
+	</div>
+
+<!--产品详情SP2-->
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-sp2.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>德国100%纯棉枕套</p>
+				<p>泰国100%天然乳胶枕芯</p>								
+			</div>
+		</div>
+	</div>
+	
+<!--产品详情SQ-->	
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-sq.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>乳胶+蚕丝 透气吸湿</p>
+				<p>舒适柔和 天然环保</p>								
+			</div>
+		</div>
+	</div>	
+	
+<!--产品详情SV-C-->	
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-sv-c.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>贴合脊柱 完美支撑</p>
+				<p>防螨抑菌 柔软舒适</p>								
+			</div>
+		</div>
+	</div>		
+	
+<!--产品详情SVF1-->
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-svf1.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>德国100%纯棉枕套</p>
+				<p>泰国100%天然乳胶枕芯</p>								
+			</div>
+		</div>
+	</div>	
+	
+<!--产品详情SVF2-->	
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-svf2.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>德国100%纯棉枕套</p>
+				<p>泰国100%天然乳胶枕芯</p>								
+			</div>
+		</div>
+	</div>
+
+<!--产品详情SVK1-->	
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-svk1.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>德国100%纯棉枕套</p>
+				<p>泰国100%天然乳胶枕芯</p>								
+			</div>
+		</div>
+	</div>
+
+<!--产品详情SVK2-->	
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-svk2.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>德国100%纯棉枕套</p>
+				<p>泰国100%天然乳胶枕芯</p>								
+			</div>
+		</div>
+	</div>
+
+<!--产品详情SVK3-->	
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-svk3.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>德国100%纯棉枕套</p>
+				<p>泰国100%天然乳胶枕芯</p>								
+			</div>
+		</div>
+	</div>
+
+<!--产品详情SV-U-->	
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-sv-u.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>环绕贴合 完美承托</p>
+				<p>高弹性和耐久性</p>								
+			</div>
+		</div>
+	</div>
+
+<!--产品详情TOPPER-->	
+	<div class="details-show-bg">
+		<div class="container details-show">
+			<img src="images/product-topper.png" />
+			<div class="details-show-1">
+				<h2>Product<br />details show </h2>
+				<h3>产品细节展示</h3>
+				<p>泰国原装进口天然乳胶——大牌品质，值得信赖</p>
+			</div>
+			<div class="details-show-2">
+				<p>100%纯棉床罩</p>
+				<p>泰国100%天然乳胶</p>								
+			</div>
+		</div>
+	</div>
+
+
+	
+	
